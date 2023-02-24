@@ -2,7 +2,7 @@ import os
 import urllib
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-DB_CHANNEL_ID = os.environ.get("DB_CHANNEL_ID", "-1001642275581")
+DB_CHANNEL_ID = os.environ.get("DB_CHANNEL_ID", "-1001854974079")
 
 
 
