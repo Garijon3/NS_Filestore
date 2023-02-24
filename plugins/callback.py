@@ -9,7 +9,7 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 from .commands import start
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-OWNER_ID = os.environ.get("OWNER_ID")
+OWNER_ID = os.environ.get("OWNER_ID", "1546983881")
 
 
 @Client.on_callback_query(filters.regex('^help$'))
@@ -67,9 +67,9 @@ async def about_cb(c, m):
 
 👨‍💻 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: {owner.mention(style='md')}
 
-📢 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: [NS BOT UPDATES](https://t.me/Ns_bot_updates)
+📢 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: [NS BOT UPDATES](https://t.me/+koUscVQWF2g1YjU1)
 
-👥 𝐆𝐫𝐨𝐮𝐩: [Ns BOT SUPPORT](https://t.me/Ns_Bot_supporters)
+👥 𝐆𝐫𝐨𝐮𝐩: [Ns BOT SUPPORT](https://t.me/+kaOp5lQlH3ljOTQ1)
 
 🌐𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞: [Press Me 🥰](https://github.com/Ns-Bots/TG-File-Store)
 """
