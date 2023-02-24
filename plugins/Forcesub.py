@@ -4,7 +4,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors import UserNotParticipant
 OWNER_ID = os.environ.get('OWNER_ID', "1546983881")
 UPDATE_CHANNEL = os.environ.get('UPDATE_CHANNEL', '-1001742838735')
-DB_CHANNEL_ID = os.environ.get("DB_CHANNEL_ID", "-1001642275581")
+DB_CHANNEL_ID = os.environ.get("DB_CHANNEL_ID", "-1001854974079")
 
 
 @Client.on_message(filters.private & filters.incoming)
