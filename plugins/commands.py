@@ -8,8 +8,8 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-DB_CHANNEL_ID = os.environ.get("DB_CHANNEL_ID")
-OWNER_ID = os.environ.get("OWNER_ID")
+DB_CHANNEL_ID = os.environ.get("DB_CHANNEL_ID", "-1001642275581")
+OWNER_ID = os.environ.get("OWNER_ID", "1546983881")
 
 
 @Client.on_message(filters.command('start') & filters.incoming & filters.private)
